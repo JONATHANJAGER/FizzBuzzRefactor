@@ -1,14 +1,11 @@
 $(document).ready(function() {
-  var i;
+  var n;
 
   $('#numberForm').submit(function(e){
     e.preventDefault();
     console.log('here');
-    i = $('.number').val();
-  })
-
-
-  for (i=1; i<=100; i++) {
+    n = $('.number').val();
+    for (i=1; i<=n; i++) {
     if (i % 3 === 0) {
       if(i % 5 === 0 ) {
         document.write('FizzBuzz' + '<br>');
@@ -24,4 +21,8 @@ $(document).ready(function() {
       document.write(i + '<br>');
     }
   }
+  })
+
+
+  
 });
